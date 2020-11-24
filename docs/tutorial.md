@@ -210,7 +210,7 @@ Now that the Merge design library has been pushed its time to test it out within
 
 * Reload the UXPin Editor in your browser.
 * Select the "Learn UXPin Merge" design system in the bottom left corner of the editor.
-* Click and drag components from the sidebar to the canvas.
+* Click and drag the components from the sidebar to the canvas.
 
 You should have a solid looking prototype:
 
@@ -244,11 +244,22 @@ FilterButton.propTypes = {
 }
 ```
 
-Show how to add function for addTask
-TODO
+Commit the change to git and push to UXPin:
+
+```
+git add .
+git commit -m "Added isPressed prop to button"
+uxpin-merge push --token YOUR_TOKEN
+```
+
+Merge components are automatically synced to the most recently pushed code. To show the latest, reload the tab showing the UXPin editor. Select a FilterButton. In the right panel of the editor you should see a new "isPressed" property. Select it to activate this state:
+
+![button pressed](/docs/images/button_pressed.png)
+
+Follow this same flow (git commit + uxpin-push) when you make future changes. Prototypes will automatically use the latest pushed version of components.
 
 ## Summary
 
-You've taken a React app and pushed its components to UXPin Merge. Now your design team can use these components to create high-fidelity prototypes within the UXPin editor. You've also learned how to push updates when you modify components or add new ones.
+You've taken a React app and pushed its components to UXPin Merge. You've also learned how to push updates when you modify components or add new ones. Now your design team can use these components to create high-fidelity prototypes within the UXPin editor.
 
-You can browse the source code for this project on GitHub. For more help with UXPin Merge see our Merge docs or reach out to us at support@uxpin.com.
+You can browse the source code for this project [on GitHub](https://github.com/itsderek23/todo-react). To learn more advanced Merge techniques see our [Merge docs](https://www.uxpin.com/docs/merge/) or reach out to us at support@uxpin.com.
