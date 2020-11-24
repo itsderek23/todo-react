@@ -176,27 +176,21 @@ touch src/components/merge/todo/Todo.js
 
 Add `'src/components/merge/todo/Todo.js'` to `uxpin.config.js` and restart `uxpin-merge --disable-tunneling`. After Experimental launches a new window, click-and-drag the Todo component onto the canvas:
 
-![todo no defaults](/docs/images/todo_no_defaults.png)
+![todo on canvas](/docs/images/todo_on_canvas.png)
 
-The default display of the Todo component looks a bit empty without displaying the name of the Todo. We could use `defaultProps` like we did with the `FilterButton` or we can use the UXPin-specific presets functionality.
-
-### Specifying the default Todo display with presets
-
-TODO
-
-We have created UXPin Merge integrations for all three of our React components. It's time to let our design team use these components within the UXPin editor.
+You'll see the Todo component along with the default "Do Laundry" todo name. This default name is only applied when using Merge.
 
 ## Pushing to UXPin
 
-Currently the UXPin Merge integration is only functional on your computer. To let your design team use these components we need to push the component bundle to UXPin. Creating and pushing a Merge design library requires two steps:
+Until you push your design system to UXPin the components are only visible to you. To let your design team use these components we need to push the component bundle to UXPin. Creating and pushing a Merge design library requires two steps:
 
 ### 1. Create the library within the UXPin UI
 
-* Go to your UXPin account
-* Enter the UXPin Editor
-* Create a new library
-* Select the option import React components
-* Copy the Auth token (don't share it with anyone and do not place it in any files checked into git repository. This token provides direct access to the library on your account.)
+1. Go to your UXPin account
+2. Enter the UXPin Editor
+3. Create a new library
+4. Select the option import React components
+5. Copy the Auth token (don't share it with anyone and do not place it in any files checked into git repository. This token provides direct access to the library on your account.)
 
 ![https://images.prismic.io/uxpincommunity%2F0b17168b-023d-44b7-8351-6e79b6e17b9b_merge_ci_2.gif?auto=compress,format](create library)
 
@@ -218,3 +212,9 @@ TODO
 
 Show how to add function for addTask
 TODO
+
+## Summary
+
+You've taken a React app and pushed its components to UXPin Merge. Now your design team can use these components to create high-fidelity prototypes within the UXPin editor. You've also learned how to push updates when you modify components or add new ones.
+
+You can browse the source code for this project on GitHub. For more help with UXPin Merge see our Merge docs or reach out to us at support@uxpin.com.

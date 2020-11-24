@@ -22,4 +22,8 @@ Todo.propTypes = {
   toggleTaskCompleted: PropTypes.func,
 }
 
+Todo.defaultProps = {
+  name: 'Do Laundry'
+};
+
 export default Todo;
