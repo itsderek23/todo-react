@@ -230,7 +230,19 @@ It's great to push an initial version of our design system. However, you'll like
 
 ## Pushing an update
 
+The FilterButton has a "pressed" state to indicate the currently active filter. Looking at the live React app, here's the difference between the pressed and not-pressed state:
 
+![pressed](/docs/images/button_pressed_not_pressed.png)
+
+Let's add support for this state. Make the following change to `src/components/FilterButton.js`:
+
+```diff
+FilterButton.propTypes = {
+-   name: PropTypes.string
++   name: PropTypes.string,
++   isPressed: PropTypes.bool
+}
+```
 
 Show how to add function for addTask
 TODO

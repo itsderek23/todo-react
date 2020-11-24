@@ -17,7 +17,8 @@ function FilterButton(props) {
 }
 
 FilterButton.propTypes = {
-   name: PropTypes.string
+   name: PropTypes.string,
+   isPressed: PropTypes.bool
 }
 
 FilterButton.defaultProps = {
