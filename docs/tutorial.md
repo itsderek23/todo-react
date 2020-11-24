@@ -210,10 +210,27 @@ Now that the Merge design library has been pushed its time to test it out within
 
 * Reload the UXPin Editor in your browser.
 * Select the "Learn UXPin Merge" design system in the bottom left corner of the editor.
+* Click and drag components from the sidebar to the canvas.
 
+You should have a solid looking prototype:
 
+![prototype](/docs/images/app_prototype.png)
+
+How does a designer handoff a prototype back to a developer?
+
+## Previewing and exporting
+
+Now that we've built a quick prototype in UXPin we're ready to export it back to our app. We can preview the output and then use Spec mode to copy and paste the JSX code for our components.
+
+Click the play button in the upper right corner of the editor. Once the preview loads click the "Spec" link at the top. You can now click on the components and view the JSX code to generate them in the right panel:
+
+![spec](/docs/images/preview_jsx_code.png)
+
+It's great to push an initial version of our design system. However, you'll likely need to push out quite a few updates over time.
 
 ## Pushing an update
+
+
 
 Show how to add function for addTask
 TODO
