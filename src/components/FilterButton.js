@@ -20,5 +20,8 @@ FilterButton.propTypes = {
    name: PropTypes.string
 }
 
+FilterButton.defaultProps = {
+  name: 'Button Name'
+};
 
 export default FilterButton;
