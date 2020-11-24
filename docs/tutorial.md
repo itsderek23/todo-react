@@ -206,7 +206,12 @@ Your design team can now access the Merge library.
 
 ## Using the Merge library within UXPin
 
-TODO
+Now that the Merge design library has been pushed its time to test it out within the UXPin editor:
+
+* Reload the UXPin Editor in your browser.
+* Select the "Learn UXPin Merge" design system in the bottom left corner of the editor.
+
+
 
 ## Pushing an update
 
